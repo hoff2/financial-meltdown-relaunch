@@ -17,15 +17,6 @@ describe("CreditApplicationConnector", () => {
         customerDetails: expectedCustomerDetails
     };
 
-    test("should render a CreditApplicationConnector", () => {
-        const div = document.createElement('div');
-        ReactDOM.render(
-            <Provider store={prepareStore(expectedState)}>
-                <CreditApplicationConnector/>
-            </Provider>, div
-        );
-    });
-
     describe("mapStateToProps", () => {
         test("should provide updateCustomerDetails from state", () => {
             expect(mapStateToProps(expectedState).customerDetails).toEqual(expectedCustomerDetails);
