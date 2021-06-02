@@ -1,0 +1,45 @@
+.customer-details {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.customer-details .row {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.customer-details .column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+fieldset {
+    margin: 0.5rem;
+    padding: 2rem;
+}
+
+label {
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+input {
+    font-size: 1.1rem;
+    margin-right: 1.5rem;
+}
+
+span {
+    font-size: 0.8rem;
+    margin-right: 1.1rem;
+}
+
+button {
+    width: 5rem;
+    height: 2rem;
+}
