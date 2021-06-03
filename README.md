@@ -1,6 +1,7 @@
 # Financial Meltdown: a React Redux app skeleton & katas
 
 _now for React 17!_
+
 (originally by Anthony Clifton, Pillar Technology; adapted by Chuck Hoffman)
 
 ## Why?
@@ -103,9 +104,9 @@ longer be modified.
 As a user, I want to store the customer's postal code, so that bills can be sent
 to a deliverable address
 
-Given I have set the customer's postal code
-When I update the customer details
-Then the postal code is persisted
+- Given I have set the customer's postal code
+- When I update the customer details
+- Then the postal code is persisted
 
 Tech Note: This property will be added to both the frontend and backend.
 
@@ -125,10 +126,10 @@ frontend that may still send the property in requests as 'rate' rather than
 As a user, I want to delete financed items, so that customers aren't billed for
 things they didn't purchase
 
-Given a financed item exists
-When I delete it
-Then it is removed from display
-And that removal is persisted
+- Given a financed item exists
+- When I delete it
+- Then it is removed from display
+- And that removal is persisted
 
 ### Strategy for Kata exercises
 
