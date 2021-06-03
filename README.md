@@ -31,7 +31,8 @@ Pairs can struggle for hours or even days with:
 
 Some questions you may encounter as you work in large or growing systems:
 
-- What's the right mix of testing strategies? To add a feature? To drive in a change?
+- What's the right mix of testing strategies? To add a feature? To drive in a
+  change?
 - How should you organize your source code?
 - What choices should you make if you are confronted with an ambiguous contract
   versus backend endpoints?
@@ -47,7 +48,8 @@ frameworks and dependencies set up for you:
 
 - React (core framework) <https://reactjs.org/>
 - Redux (state management) <https://react-redux.js.org/>
-- tcomb (type management and object validation) <https://github.com/gcanti/tcomb>
+- tcomb (type management and object validation)
+  <https://github.com/gcanti/tcomb>
 - fetch (REST api calls) and fetch-mock for unit tests
 - toastify (on screen informational or error notifications)
   <https://fkhadra.github.io/react-toastify/introduction>
@@ -57,9 +59,9 @@ frameworks and dependencies set up for you:
 
 No UI frameworks such as Material Design or Bootstrap are used.
 
-The application's functionality is to allow the user to maintain a single customer,
-with their details and their financed items, which is persistd in a simple backend
-server implemented in Java and Spring Boot.
+The application's functionality is to allow the user to maintain a single
+customer, with their details and their financed items, which is persistd
+in a simple backend server implemented in Java and Spring Boot.
 
 - To start the frontend app: `npm run start`
 - To run frontend unit tests: `npm run test`
@@ -71,12 +73,14 @@ script starts it up in a Docker image.
 
 ## What can I do with it?
 
-In addition to being a helpful example app for reference, this repository can be used
-for some kata exercises to help you learn to:
+In addition to being a helpful example app for reference, this repository can be
+used for some kata exercises to help you learn to:
 
-- Add a feature by test driving all of the necessary pieces of ReactJS, Redux, and tcomb
+- Add a feature by test driving all of the necessary pieces of ReactJS, Redux,
+  and tcomb
 - Add a property to existing domain and data transfer objects
-- Change a property in the domain and data transfer objects while maintaining backward compatibility
+- Change a property in the domain and data transfer objects while maintaining
+  backward compatibility
 
 You can safely and quickly make changes to systems with complex lifecycles
 by working your way around the lifecycle methodically, using test strategies
