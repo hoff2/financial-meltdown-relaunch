@@ -1,44 +1,48 @@
-import {getDefaultFinancedItem} from "./financed-item-state";
-import {ADD_FINANCED_ITEM, UPDATE_FINANCED_ITEM, UPDATE_FINANCED_ITEMS} from "../../store/actions";
+import { getDefaultFinancedItem } from "./financed-item-state";
+import {
+  ADD_FINANCED_ITEM,
+  UPDATE_FINANCED_ITEM,
+  UPDATE_FINANCED_ITEMS,
+} from "../../store/actions";
 import FinancedItemState from "./financed-item-state";
 
 const addFinancedItem = (state) => {
-    const updatedFinancedItems = state.slice();
+  const updatedFinancedItems = state.slice();
 
-    const newFinancedItem = FinancedItemState({
-        itemName: "",
-        price: 0.00
-    });
+  const newFinancedItem = FinancedItemState({
+    itemName: "",
+    price: 0.0,
+  });
 
-    updatedFinancedItems.push(newFinancedItem);
+  updatedFinancedItems.push(newFinancedItem);
 
-    return updatedFinancedItems;
+  return updatedFinancedItems;
 };
 
 const updateFinancedItem = (state, action) => {
-    const updatedFinancedItems = state.slice();
-    const itemIndex = action.payload.itemIndex;
-    const updatedItem = action.payload.updatedFinancedItem;
+  const updatedFinancedItems = state.slice();
+  const itemIndex = action.payload.itemIndex;
+  const updatedItem = action.payload.updatedFinancedItem;
 
-    updatedFinancedItems[itemIndex] = updatedItem;
+  updatedFinancedItems[itemIndex] = updatedItem;
 
-    return updatedFinancedItems;
+  return updatedFinancedItems;
 };
 
 const updateFinancedItems = (state, action) => {
-    return action.payload;
+  return action.payload;
 };
 
 const financedItemsReducer = (state = [getDefaultFinancedItem()], action) => {
-    const reducers = {
-        [ADD_FINANCED_ITEM]: addFinancedItem,
-        [UPDATE_FINANCED_ITEM]: updateFinancedItem,
-        [UPDATE_FINANCED_ITEMS]: updateFinancedItems
-    };
+  const reducers = {
+    [ADD_FINANCED_ITEM]: addFinancedItem,
+    [UPDATE_FINANCED_ITEM]: updateFinancedItem,
+    [UPDATE_FINANCED_ITEMS]: updateFinancedItems,
+  };
 
-    const reducer = action ? reducers[action.type] : null;
+  const reducer = action ? reducers[action.type] : null;
 
-    return reducer ? reducer(state, action) : state;
+  return reducer ? reducer(state, action) : state;
 };
 
 export default financedItemsReducer;

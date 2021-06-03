@@ -51,7 +51,7 @@ frameworks and dependencies set up for you:
 - fetch (REST api calls) and fetch-mock for unit tests
 - toastify (on screen informational or error notifications)
   <https://fkhadra.github.io/react-toastify/introduction>
-- jest (unit and integration testing) <https://jestjs.io/>
+- jest, enzyme, and sinon (unit and integration testing) <https://jestjs.io/>
 - cypress (e2e and/or acceptance testing) <https://www.cypress.io/>
 - A simplistic backend fake system in Spring Boot to provide a REST API
 
