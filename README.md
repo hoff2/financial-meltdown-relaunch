@@ -40,7 +40,7 @@ Some questions you may encounter as you work in large or growing systems:
   Several teams? Dozens of teams?
 - How do you avoid breaking changes in a continous delivery/deployment scenario?
 
-## What's this?
+## What's this then?
 
 This repository contains a project designed to show how we want to structure
 applications on the frontend in React. It has the following
@@ -50,11 +50,14 @@ frameworks and dependencies set up for you:
 - Redux (state management) <https://react-redux.js.org/>
 - tcomb (type management and object validation)
   <https://github.com/gcanti/tcomb>
-- fetch (REST api calls) and fetch-mock for unit tests
+- fetch (REST api calls)
 - toastify (on screen informational or error notifications)
   <https://fkhadra.github.io/react-toastify/introduction>
-- jest, enzyme, and sinon (unit and integration testing) <https://jestjs.io/>
+- jest (unit and integration testing) <https://jestjs.io/>
+- enzyme <https://enzymejs.github.io/enzyme/>, fetch-mock, and sinon
+  <https://sinonjs.org/> (unit test mocking)
 - cypress (e2e and/or acceptance testing) <https://www.cypress.io/>
+- probably some nice eslint stuff
 - A simplistic backend fake system in Spring Boot to provide a REST API
 
 No UI frameworks such as Material Design or Bootstrap are used.
@@ -76,7 +79,7 @@ script starts it up in a Docker image.
 In addition to being a helpful example app for reference, this repository can be
 used for some kata exercises to help you learn to:
 
-- Add a feature by test driving all of the necessary pieces of ReactJS, Redux,
+- Add a feature by test driving all of the necessary pieces of React, Redux,
   and tcomb
 - Add a property to existing domain and data transfer objects
 - Change a property in the domain and data transfer objects while maintaining
